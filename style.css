@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "Gilroy-bold";
+  src: url(/Assets/Gilroy-Bold.ttf);
+}
+@font-face {
+  font-family: "Gilroy-Semibold";
+  src: url(/Assets/Gilroy-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("/Assets/Gilroy-Regular.ttf");
+}
+
+body {
+  background-image: url(./Assets/Background-hero.png);
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: centers;
+  background-attachment: fixed;
+  background-size: cover;
+
+  font-family: "Gilroy-Regular";
+  font-weight: 300;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+/* header start */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  margin: auto;
+  max-width: 1715px;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 67px;
+}
+
+header .navbar a {
+  color: #f4f4f5;
+  font-family: Gilroy-regular;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+header .logo-container .logo {
+  color: #f4f4f5;
+  font-family: Gilroy-semibold;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+}
+
+/* header end */
+
+/* hero-section start */
+
+.hero-section {
+  position: relative;
+  max-width: 1715px;
+  margin: auto;
+}
+
+.hero-section .text-top {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 26px;
+  padding-top: 100px;
+}
+
+.hero-section .text-top h3 {
+  color: #f4f4f5;
+  font-family: Gilroy-Regular;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero-section .text-top h1 {
+  color: #f4f4f5;
+  font-family: Gilroy-Bold;
+  font-size: 89px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 113px; /* 126.966% */
+}
+
+.hero-section .text-bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 1074px;
+  padding-top: 120px;
+  align-items: end;
+}
+
+.hero-section .text-bottom p {
+  color: #fff;
+  font-family: Gilroy-Regular;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+}
+
+.hero-section .text-bottom img {
+  position: relative;
+  width: 139px;
+  height: 139px;
+  flex-shrink: 0;
+  animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
